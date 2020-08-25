@@ -1,0 +1,36 @@
+{
+  "name": "library-name",
+  "version": "0.0.0",
+  "description": "Library Boilerplate",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sefabaser/library-boilerplate.git"
+  },
+  "author": "sefabaser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sefabaser/library-boilerplate/issues"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "printWidth": 150,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "homepage": "https://github.com/sefabaser/library-boilerplate#readme",
+  "scripts": {
+    "build": "tsc",
+    "pretest": "clear",
+    "test": "jest --watch",
+    "test:cov": "jest --coverage",
+    "deploy": "npm test && npm run build && npm publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0"
+  }
+}
