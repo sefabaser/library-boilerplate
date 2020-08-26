@@ -19,6 +19,24 @@
     "singleQuote": true,
     "arrowParens": "avoid"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "./"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
   "homepage": "https://github.com/sefabaser/library-boilerplate#readme",
   "scripts": {
     "build": "tsc",
