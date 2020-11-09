@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/sefabaser/library-boilerplate#readme",
   "scripts": {
+    "start": "npm run build && node dist",
     "build": "tsc",
     "pretest": "clear",
     "lint": "eslint \"src/**/*.ts\" --fix",
